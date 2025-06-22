@@ -27,4 +27,4 @@
 
 ---
 
-project link: "https://snackworld/infinityfreeapp.com"
+project link: "https://snackworld.infinityfreeapp.com"
