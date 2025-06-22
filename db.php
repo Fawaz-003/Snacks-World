@@ -1,16 +1,12 @@
 <?php
-// db.php: Database connection file
+$host = "sql312.epizy.com";             
+$user = "if0_39295639";                 
+$pass = "Snackworld003";         
+$db   = "if0_39295639_snackworld";      
 
-$host = 'localhost'; // Database host
-$db   = 'snackworld'; // Database name
-$user = 'root'; // Database username
-$pass = ''; // Database password
+$conn = mysqli_connect($host, $user, $pass, $db);
 
-// Create connection
-$conn = new mysqli($host, $user, $pass, $db);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
